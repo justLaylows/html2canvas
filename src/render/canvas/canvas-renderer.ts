@@ -622,7 +622,7 @@ export class CanvasRenderer extends Renderer {
 
                 ctx.fillStyle = gradient;
                 ctx.fillRect(0, 0, width, height);
-                if (width > 0 && height > 0) {
+                if (canvas.width > 0 && canvas.height > 0) {
                     const pattern = this.ctx.createPattern(canvas, 'repeat') as CanvasPattern;
                     this.renderRepeat(path, pattern, x, y);
                 }
